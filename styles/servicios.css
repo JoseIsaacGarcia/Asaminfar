@@ -12,11 +12,10 @@
 3. Header
 4. Menu
 5. Home
-6. About
-7. Quote
-8. Trainers
-9. CTA
-10. Footer
+6. Classes
+7. CTA
+8. Icon Boxes
+9. Footer
 
 
 ******************************/
@@ -318,7 +317,7 @@ section {
     -webkit-transform-origin: center center;
     transform-origin: center center;
     width: 130%;
-    height: 320%;
+    height: 370%;
     background: #ff0e3b;
     content: '';
     z-index: 0;
@@ -610,7 +609,7 @@ section {
 }
 
 .menu_nav ul li a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -667,88 +666,38 @@ section {
 
 
 /*********************************
-6. About
+6. Classes
 *********************************/
 
-.about {
+.classes {
     background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 99px;
 }
 
-.about_content {
-    padding-top: 125px;
-    padding-bottom: 62px;
+.class_box {
+    padding-bottom: 50px;
+    margin-bottom: 53px;
 }
 
-.about_text {
-    margin-top: 25px;
-    padding-right: 75px;
+.class_box>div {
+    background: #eef3f6;
+    padding-top: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 79px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 
-.about_button {
-    margin-top: 36px;
+.class_box.new_class>div {
+    background: #ff0e3b;
 }
 
-.about_image {
-    position: absolute;
-    top: 0;
-    left: -30px;
-    height: 100%;
-}
-
-.about_image>img {
-    max-width: none;
-    height: 100%;
-}
-
-
-/*********************************
-7. Quote
-*********************************/
-
-.quote {
-    width: 100%;
-    background-color: #7800ff;
-    background-image: linear-gradient(to right, #7800ff, #ff0e3b);
-    background: #7800ff;
-    background: linear-gradient(to right, #7800ff, #ff0e3b);
-}
-
-.quote_content {
-    height: 187px;
-}
-
-.quote_content p {
-    font-size: 36px;
-    font-weight: 600;
-    font-style: italic;
-    color: #ffffff;
-    line-height: 1.5;
-}
-
-
-/*********************************
-8. Trainers
-*********************************/
-
-.trainers {
-    background: #ffffff;
-    padding-top: 97px;
-    padding-bottom: 39px;
-}
-
-.trainers_row {
-    margin-top: 90px;
-}
-
-.trainer_box {
-    margin-bottom: 60px;
-}
-
-.trainer_image {
-    z-index: 1;
-}
-
-.trainer_info {
+.class_image {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -756,66 +705,117 @@ section {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -40px;
-    background: #ffffff;
-    width: 198px;
-    height: 98px;
+    bottom: -50px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.trainer_info>div {
-    width: 100%;
+.class_image a {
+    display: block;
+    position: relative;
     height: 100%;
 }
 
-.trainer_name a {
+.class_image a::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 3px #ff0e3b;
+    content: '';
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.class_box:hover .class_image a::after {
+    opacity: 1;
+}
+
+.class_box:hover>div {
+    background: #190a49;
+}
+
+.classes_title h3 {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.class_box.new_class>div .classes_title h3 {
+    color: #ffffff;
+}
+
+.class_box:hover .classes_title h3 {
+    color: #ffffff;
+}
+
+.classes_text {
+    margin-top: 25px;
+}
+
+.class_box.new_class>div .classes_text p {
+    color: #ffffff;
+}
+
+.classes_instructor {
+    margin-top: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #909090;
+}
+
+.classes_instructor a {
+    color: #2c2c2c;
+    margin-left: 5px;
+}
+
+.class_box:hover .classes_instructor a {
+    color: #ffffff;
+}
+
+.class_box.new_class>div .classes_instructor,
+.class_box.new_class>div .classes_instructor a {
+    color: #ffffff;
+}
+
+.new_class::after {
+    display: block;
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    width: 78px;
+    height: 37px;
+    background: #443586;
+    content: 'New';
+    z-index: 1;
+    line-height: 37px;
     font-size: 16px;
     font-weight: 700;
-    color: #2c2c2c;
-    text-transform: uppercase;
-    line-height: 1.2;
+    color: #ffffff;
 }
 
-.trainer_title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #ff0e3b;
-    margin-top: 7px;
-}
-
-.trainer_content {
-    background: #ffffff;
-    padding-top: 33px;
-}
-
-.trainer_social {}
-
-.trainer_social ul li a i {
-    color: #190a49;
-}
-
-.trainer_text {
-    margin-top: 17px;
+.classes_button {
+    width: 250px;
+    margin-top: 35px;
 }
 
 
 /*********************************
-9. CTA
+7. CTA
 *********************************/
 
 .cta {
-    background: #0f0432;
-}
-
-.cta_image {
-    width: 40%;
-}
-
-.cta_content {
-    width: 60%;
     padding-top: 171px;
-    padding-bottom: 149px;
-    padding-left: 164px;
-    padding-right: 130px;
+    padding-bottom: 161px;
 }
 
 .cta .section_title h1 {
@@ -823,25 +823,50 @@ section {
 }
 
 .cta_text {
+    padding-left: 60px;
+    padding-right: 60px;
     margin-top: 29px;
-    padding-right: 50px;
 }
 
-.cta_buttons {
+.cta_button {
     margin-top: 56px;
-}
-
-.cta_buttons .cta_button {
-    margin-bottom: 12px;
-}
-
-.cta_buttons .cta_button:not(:last-child) {
-    margin-right: 18px;
 }
 
 
 /*********************************
-10. Footer
+8. Icon Boxes
+*********************************/
+
+.icon_boxes {
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.icon_box {
+    margin-bottom: 75px;
+}
+
+.icon_box_icon {
+    width: 82px;
+    height: 82px;
+}
+
+.icon_box_icon img {
+    max-height: 100%;
+}
+
+.icon_box_title {
+    margin-top: 35px;
+}
+
+.icon_box_text {
+    margin-top: 30px;
+}
+
+
+/*********************************
+9. Footer
 *********************************/
 
 .footer {

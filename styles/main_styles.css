@@ -161,6 +161,10 @@ h6 {
     letter-spacing: 0.2em;
 }
 
+h3 .inicio {
+    font-size: 2em;
+}
+
 img {
     max-width: 100%;
 }
@@ -612,7 +616,7 @@ section {
 }
 
 .menu_nav ul li a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -838,7 +842,8 @@ section {
 }
 
 .intro_box:nth-child(2) {
-    background: #39b777;;
+    background: #39b777;
+    ;
 }
 
 .intro_box:nth-child(3) {
@@ -1312,4 +1317,36 @@ section {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.38);
     text-transform: uppercase;
+}
+
+
+/*********************************
+13. Icon Boxes
+*********************************/
+
+.icon_boxes {
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+.icon_box {
+    margin-bottom: 75px;
+}
+
+.icon_box_icon {
+    width: 82px;
+    height: 82px;
+}
+
+.icon_box_icon img {
+    max-height: 100%;
+}
+
+.icon_box_title {
+    margin-top: 35px;
+}
+
+.icon_box_text {
+    margin-top: 30px;
 }
