@@ -834,15 +834,15 @@ section {
 }
 
 .intro_box:first-child {
-    background: #190a49;
+    background: white;
 }
 
 .intro_box:nth-child(2) {
-    background: #3c098d;
+    background: #39b777;;
 }
 
 .intro_box:nth-child(3) {
-    background: #ff0e3b;
+    background: white;
 }
 
 .intro_box_icon {
@@ -861,7 +861,7 @@ section {
 .intro_box_title h3 {
     font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
@@ -871,7 +871,7 @@ section {
 }
 
 .intro_box_text p {
-    color: #ffffff;
+    color: black;
 }
 
 
