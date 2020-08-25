@@ -536,7 +536,7 @@ section {
 
 .hamburger i {
     font-size: 22px;
-    color: #ffffff;
+    color: black;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
