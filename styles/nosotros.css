@@ -730,6 +730,11 @@ section {
 8. Trainers
 *********************************/
 
+.trainers-mvv {
+    background: rgb(243, 249, 246) !important;
+    background: radial-gradient(circle, rgba(243, 249, 246, 1) 0%, rgba(243, 249, 246, 1) 91%) !important;
+}
+
 .trainers {
     background: #ffffff;
     padding-top: 97px;
@@ -845,7 +850,8 @@ section {
 *********************************/
 
 .footer {
-    background: #190a49;
+    background: rgb(57, 183, 119);
+    background: radial-gradient(circle, rgba(57, 183, 119, 0.27493004037552526) 83%, rgba(217, 215, 215, 1) 100%);
 }
 
 .footer_content {
@@ -865,7 +871,8 @@ section {
 .copyright {
     font-size: 11px;
     font-weight: 700;
-    color: #443586;
+    color: #39b777;
+    ;
 }
 
 .footer_row {
@@ -876,7 +883,7 @@ section {
     width: 95px;
     height: 95px;
     border-radius: 50%;
-    background: #0f0432;
+    background: gray;
 }
 
 .footer_icon>div {
@@ -893,7 +900,7 @@ section {
     margin-top: 33px;
     font-size: 16px;
     font-weight: 700;
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     line-height: 1.2;
@@ -910,6 +917,18 @@ section {
 .footer_list ul li {
     font-size: 14px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.38);
     text-transform: uppercase;
+}
+
+
+/*********************************
+11. span
+*********************************/
+
+span {
+    text-align: center;
+    line-height: 1;
+    font-size: 50px;
+    color: #23A455;
+    ;
 }
